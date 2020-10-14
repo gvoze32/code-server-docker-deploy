@@ -2,7 +2,7 @@
 codeserverpuid="$(command id codeserver 2>'/dev/null' \
     | command head -n 1 \
     | command cut --characters=5-8)"
-codeserverpgid="codeserverpuid"
+codeserverpgid=$codeserverpuid
 read -p "Input User : " user
 read -p "Password : " pw
 read -p "Port : " portenv
