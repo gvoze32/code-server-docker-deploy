@@ -1,0 +1,21 @@
+version: '2.1'
+services:
+  code-server:
+    image: linuxserver/code-server:latest
+    volumes:
+      - /home/codeserver/${NAMA_PELANGGAN}:/workspace
+    restart: unless-stopped
+    ports:
+      - "${PORT}:${PORT}"
+    environment:
+      - PUID=${PUIDS}
+      - PGID=${PGIDS}
+      - TZ=Asia/Jakarta
+      - PASSWORD=${PASSWORD_PELANGGAN}
+      - SUDO_PASSWORD=${PASSWORD_PELANGGAN}
+    command:
+      - --host 0.0.0.0
+      - --port=${PORT}
+# Optional, uncomment if you need to use it.
+    mem_limit: ${MEMORY}
+    cpus: ${CPUS}
