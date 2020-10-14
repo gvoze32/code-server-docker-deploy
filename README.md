@@ -8,7 +8,6 @@ Make sure you have root access before doing this installation.
 
 ```
 $ sudo apt-get update
-$ sudo apt-get install dialog
 $ git clone https://github.com/gvoze32/code-server-docker-deploy
 $ cd code-server-docker-deploy
 $ sudo bash firstinstall.sh
