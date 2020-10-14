@@ -10,5 +10,5 @@ pip install requests selenium colorama bs4 wget
 systemctl start atd
 sudo apt install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common docker docker.io docker-compose
 sudo adduser codeserver
-sudo wget https://raw.githubusercontent.com/gvoze32/code-server-docker-deploy/docker-compose.yml -O /home/codeserver/docker-compose.yml
+sudo wget https://raw.githubusercontent.com/gvoze32/code-server-docker-deploy/master/docker-compose.yml -O /home/codeserver/docker-compose.yml
 echo "blank" >> /home/codeserver/.env
