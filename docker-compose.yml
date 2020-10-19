@@ -14,7 +14,6 @@ services:
       - PASSWORD=${PASSWORD_PELANGGAN}
       - SUDO_PASSWORD=${PASSWORD_PELANGGAN}
     command:
-      - --host=0.0.0.0
       - --port=${PORT}
 # Optional, uncomment if you need to use it.
     mem_limit: ${MEMORY}
