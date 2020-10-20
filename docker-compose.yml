@@ -6,7 +6,7 @@ services:
       - /home/codeserver/${NAMA_PELANGGAN}:/workspace
     restart: unless-stopped
     ports:
-      - "${PORT}:${PORT}"
+      - "${PORT}:8443"
     environment:
       - PUID=${PUIDS}
       - PGID=${PGIDS}
