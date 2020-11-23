@@ -13,6 +13,6 @@ services:
       - TZ=Asia/Jakarta
       - PASSWORD=${PASSWORD_PELANGGAN}
       - SUDO_PASSWORD=${PASSWORD_PELANGGAN}
-# Optional, uncomment if you need to use it.
+# Optional, comment if you don't need to use it.
     mem_limit: ${MEMORY}
     cpus: ${CPUS}
